@@ -57,6 +57,7 @@ a:hover {
 }
 
 .content {
+    display: none;
     overflow-y: scroll;
     max-height: 60vh;
     animation: fadeEffect 0.3s;
@@ -83,7 +84,7 @@ a:hover {
 }
 
 .modal-btn {
-    margin: 5px;
+    margin-top: 10px;
     background-color: #6ea6a6;
     border-color: antiquewhite;
 }
@@ -92,10 +93,6 @@ a:hover {
     background-color: #6ea6a6;
     border-color: #6ea6a6;
     box-shadow: 2px 2px 3px #5d5d5d;
-}
-
-.form-bg {
-    background-color: beige;
 }
 
 @media only screen and (max-width: 576px) {

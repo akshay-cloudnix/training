@@ -1,5 +1,3 @@
-
-<!-- Hellofddfhfdh -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,16 +21,16 @@
         <div class="row">
             <h3 class="col-sm-12 col-12 header">Dalvi Akshay Balasaheb</h3>
             <div class="col-md-4 col-sm-3 col-12 row navigation">
-                <div class="col-sm-12 col-3 tab" onclick="openContent('tab1')" data-toggle="tooltip" data-placement="bottom" title="Career Objective" id="defaultOpen"><a href="#"><img src="img/target.png" /><span class="d-sm-none d-md-block">Objective</span></a></div>
-                <div class="col-sm-12 col-3 tab" onclick="openContent('tab2')" data-toggle="tooltip" data-placement="bottom" title="Highest Education"><a href="#"><img src="img/education.png" /><span class="d-sm-none d-md-block">Education</span></a></div>
-                <div class="col-sm-12 col-3 tab" onclick="openContent('tab3')" data-toggle="tooltip" data-placement="bottom" title="Work Experience"><a href="#"><img src="img/work.png" /><span class="d-sm-none d-md-block">Experience</span></a></div>
-                <div class="col-sm-12 col-3 tab" onclick="openContent('tab4')" data-toggle="tooltip" data-placement="bottom" title="Previous Projects"><a href="#"><img src="img/project.png" /><span class="d-sm-none d-md-block">Projects</span></a></div>
+                <div class="col-sm-12 col-3 tab" onclick="openContent(event, 'content-1')" data-toggle="tooltip" data-placement="bottom" title="Career Objective" id="defaultOpen"><a href="#"><img src="img/target.png" /><span class="d-sm-none d-md-block">Objective</span></a></div>
+                <div class="col-sm-12 col-3 tab" onclick="openContent(event, 'content-2')" data-toggle="tooltip" data-placement="bottom" title="Highest Education"><a href="#"><img src="img/education.png" /><span class="d-sm-none d-md-block">Education</span></a></div>
+                <div class="col-sm-12 col-3 tab" onclick="openContent(event, 'content-3')" data-toggle="tooltip" data-placement="bottom" title="Work Experience"><a href="#"><img src="img/work.png" /><span class="d-sm-none d-md-block">Experience</span></a></div>
+                <div class="col-sm-12 col-3 tab" onclick="openContent(event, 'content-4')" data-toggle="tooltip" data-placement="bottom" title="Previous Projects"><a href="#"><img src="img/project.png" /><span class="d-sm-none d-md-block">Projects</span></a></div>
             </div>
-            <div id="content" class="col-md-8 col-sm-9 col-12 content">
-                <h3 id="topic"></h3>
-                <div id="info"></div>
+            <div id="content-1" class="col-md-8 col-sm-9 col-12 content">
+                <h3>CAREER OBJECTIVE:</h3>
+                <div>To be associated with a progressive organization that can provide me with dynamic work   environment to extract my inherent skills and enable me to use my educational background   and ability work well with colleagues and grow with the organization. </div>
             </div>
-<!--             <div id="content-2" class="col-md-8 col-sm-9 col-12 content">
+            <div id="content-2" class="col-md-8 col-sm-9 col-12 content">
                 <h3>EDUCATION:</h3>
                 <div>Completed BE. ( Mechanical S/W)</div> <br>                 
             </div>   
@@ -57,7 +55,7 @@
                     <strong>KDCC Bank:</strong> 
                     Team Size: 3 Role: Intern <br /> Environment / Skills: HTML, CSS, Bootstrap, jQuery, JS  <br /> Description: This is Bank Website which having E-tendering facility. It is live at <br> <a href="http://kdccbank.com">http://kdccbank.com</a>
                 </div>                
-            </div> -->
+            </div>
             <div class="col-sm-12 col-12 footer">    
 		        <div><strong>E-mail:</strong> akshaybdalvi001@gmail.com <br> <strong>Contact:</strong> +91 94 23 444590 / 90 96 224488</div>
             </div>
@@ -67,7 +65,7 @@
     <div class="heading">Modal Box</div>
     <div class="container-fluid">
         <!-- Button to Open the Modal -->
-        <button type="button" class="btn btn-primary modal-btn" data-toggle="modal" data-target="#myModal">Achievements</button>
+        <button type="button" class="btn btn-primary modal-btn btn-block" data-toggle="modal" data-target="#myModal">Achievements</button>
 
         <!-- The Modal -->
         <div class="modal fade" id="myModal">
@@ -100,7 +98,7 @@
     </div>
     <div class="heading">Bootstrap Form</div>
     <!-- Bootstrap Form Element -->
-    <div class="container-fluid form-bg">
+    <div class="container">
         <form action="/action_page.php" class="was-validated">
             <div class="form-group">
             <label for="uname">Username:</label>
@@ -127,22 +125,22 @@
     
 
 
-<!--     <script>
+    <script>
             function openContent(evt, content1) {
-            var i, content, tab;
-            content = document.getElementsByClassName("content");
-            for (i = 0; i < content.length; i++) {
-            content[i].style.display = "none";
-            }
-            tab = document.getElementsByClassName("tab");
-            for (i = 0; i < tab.length; i++) {
-            tab[i].className = tab[i].className.replace(" active", "");
-            }
-            document.getElementById(content1).style.display = "block";
-            evt.currentTarget.className += " active";
+        var i, content, tab;
+        content = document.getElementsByClassName("content");
+        for (i = 0; i < content.length; i++) {
+        content[i].style.display = "none";
         }
-        document.getElementById("defaultOpen").click();
-    </script> -->
+        tab = document.getElementsByClassName("tab");
+        for (i = 0; i < tab.length; i++) {
+        tab[i].className = tab[i].className.replace(" active", "");
+        }
+        document.getElementById(content1).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    document.getElementById("defaultOpen").click();
+    </script>
     
     <script src="script.js"></script>
 </body>
