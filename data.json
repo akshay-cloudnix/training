@@ -1,0 +1,44 @@
+{
+    "data":{
+        "tab1" : [  
+            {  
+               "topic":{  
+                  "name":"Career Objective:"
+               },
+               "detail":{  
+                  "info": "To be associated with a progressive organization that can provide me with dynamic work   environment to extract my inherent skills and enable me to use my educational background   and ability work well with colleagues and grow with the organization."
+                  }
+            }
+       ],
+        "tab2" : [  
+            {  
+               "topic":{  
+                  "name":"Education:"
+               },
+               "detail":{  
+                  "info": "Completed BE. ( Mechanical S/W)."
+                  }
+            }
+       ],
+        "tab3" : [  
+            {  
+               "topic":{  
+                  "name":"Experience:"
+               },
+               "detail":{  
+                  "info": "Currently working as Software Engineer at Reverziel Info-tech Pvt. Ltd. (JULY-2018- till date).Completed 6 months Internship at Reverziel Info-tech Pvt. Ltd. (JAN-2018 to JUNE-2018)."
+                  }
+            }
+       ],
+        "tab4" : [  
+            {  
+               "topic":{  
+                  "name":"Projects:"
+               },
+               "detail":{  
+                  "info": "My Contribution: UI Developer Create Screens as per design provided  using HTML CSS and Bootstrap and then Senior will integrate those screens in Angular  App Environment: Angular, HTML, CSS, JS, Bootstrap, SASS  Description: This is an  ongoing project which builds in Angular 7 Paytm Zone tied with thirdparty affiliation  program and displays daily deals and coupon codes to the user."
+                  }
+            }
+       ]
+    }   
+}
